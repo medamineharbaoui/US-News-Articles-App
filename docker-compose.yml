@@ -1,0 +1,49 @@
+version: "3.8" # Specify Docker Compose version
+
+services:
+  frontend:
+    build:
+      context: ./frontend # Path to the frontend folder containing Dockerfile
+    ports:
+      - "3000:80" # Expose frontend on port 3000
+    networks:
+      - app-network
+    depends_on:
+      - backend # Ensures backend is available for frontend requests
+
+  backend:
+    build:
+      context: ./backend # Path to the backend folder containing Dockerfile
+    ports:
+      - "5000:5000" # Expose backend on port 5000
+    env_file:
+      - ./backend/.env # Load environment variables from backend/.env file
+    depends_on:
+      - mongo # Ensure MongoDB is running before starting backend
+    networks:
+      - app-network
+    healthcheck: # Optional: Health check for backend service
+      test: ["CMD", "curl", "-f", "http://localhost:5000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  mongo:
+    image: mongo:latest # Use the latest MongoDB image
+    volumes:
+      - mongo_data:/data/db # Persist MongoDB data
+    networks:
+      - app-network
+    healthcheck: # Optional: Health check for MongoDB service
+      test: ["CMD", "mongo", "--eval", "db.adminCommand('ping')"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mongo_data:
+    driver: local

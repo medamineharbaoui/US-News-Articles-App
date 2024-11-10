@@ -1,0 +1,14 @@
+.vscode
+
+backend/node_modules
+backend/package-lock.json
+backend/data/uscities.csv
+backend/data/News_Category_Dataset_v3.json
+
+
+frontend/node_modules
+frontend/package-lock.json
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

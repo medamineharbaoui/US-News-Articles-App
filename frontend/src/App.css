@@ -1,0 +1,99 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Header styles */
+h1 {
+  font-family: "Merriweather", serif;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* SearchBar styles */
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  background-color: #6200ea;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+
+.search-bar button:hover {
+  background-color: #3700b3;
+}
+
+/* Filter styles */
+.filter {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filter label {
+  font-family: "Roboto", sans-serif;
+}
+
+.filter input {
+  margin-right: 5px;
+}
+
+/* ArticleList styles */
+.article-list {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.article {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.article h3 {
+  font-family: "Merriweather", serif;
+  color: #6200ea;
+}
+
+.article a {
+  color: inherit;
+}
+
+.article p {
+  font-family: "Roboto", sans-serif;
+  color: #555;
+}
+
+.article small {
+  color: #777;
+  font-size: 12px;
+}

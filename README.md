@@ -105,4 +105,4 @@ The project is containerized using Docker. There are separate **Dockerfiles** fo
 
 ## **Conclusion**
 
-This project demonstrates the use of a data pipeline to classify news articles as "local" or "global" and assign them to cities in the United States. The solution is fully Dockerized, supports frontend and backend communication, and is deployed on AWS for easy access.
+This project demonstrates the use of a data pipeline to classify news articles as "local" or "global" and assign them to cities in the United States. The solution is fully Dockerized, supports frontend and backend communication.

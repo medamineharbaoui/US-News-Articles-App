@@ -1,5 +1,7 @@
 # **Local News Experience for US Cities**
 
+![Screenshot](image.png)
+
 ## **Overview**
 
 This project delivers a **local news experience** for cities in the United States. The system processes news articles, classifies them as either "local" or "global," determines the location for the local news, and allows users to search and filter articles based on their location. The project is built using:
@@ -102,7 +104,7 @@ The project is containerized using Docker. There are separate **Dockerfiles** fo
 
 ## **Deployment on AWS**
 
-The application is hosted on **AWS** for easy access. After building and testing the app locally with Docker, you can deploy the Docker containers to an EC2 instance or use **AWS Elastic Beanstalk** for a simpler deployment process.
+The application is hosted on **AWS** for easy access. After building and testing the app locally with Docker, I deploy the Docker containers to an EC2 instance.
 
 ---
 

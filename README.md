@@ -104,7 +104,7 @@ The project is containerized using Docker. There are separate **Dockerfiles** fo
 
 ## **Deployment on AWS**
 
-The application is hosted on **AWS** for easy access. After building and testing the app locally with Docker, I deploy the Docker containers to an EC2 instance.
+The application is hosted on **AWS** for easy access. After building and testing the app locally with Docker, the Docker containers was deployed to an EC2 instance.
 
 ---
 

@@ -10,7 +10,6 @@ This project delivers a **local news experience** for cities in the United State
 - **Node.js** for the backend
 - **MongoDB** for the database
 - **Docker** for containerization
-- **AWS** for deployment
 
 ---
 
@@ -21,7 +20,6 @@ This project delivers a **local news experience** for cities in the United State
 - **Pagination**: Supports pagination for viewing a large number of articles.
 - **Responsive UI**: Built with **Material UI** to provide a smooth user experience.
 - **Dockerized**: The application is fully containerized using Docker for easy deployment and scaling.
-- **Deployment on AWS**: The app is hosted on **AWS** for easy access.
 
 ---
 
@@ -102,9 +100,6 @@ The project is containerized using Docker. There are separate **Dockerfiles** fo
 
 ---
 
-## **Deployment on AWS**
-
-The application is hosted on **AWS** for easy access. After building and testing the app locally with Docker, the Docker containers was deployed to an EC2 instance.
 
 ---
 

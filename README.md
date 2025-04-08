@@ -4,7 +4,7 @@
 
 ## **Overview**
 
-This project delivers a **local news experience** for cities in the United States. The system processes news articles, classifies them as either "local" or "global," determines the location for the local news, and allows users to search and filter articles based on their location. The project is built using:
+This project delivers a **local news experience** for cities in the United States. The system processes news articles, classifies them as either "local" or "global," determines the location for local news, and allows users to search and filter articles based on their location. It leverages **OpenAI's GPT-4o-mini model to intelligently classify articles and extract city-level information for accurate localization**. The project is built using:
 
 - **React** for the frontend
 - **Node.js** for the backend
@@ -15,7 +15,7 @@ This project delivers a **local news experience** for cities in the United State
 
 ## **Key Features**:
 
-- **News Classification**: Articles are classified as either "local" or "global" based on their content.
+- **AI-Powered News Classification**: Utilizes OpenAI's GPT-4o-mini model to classify articles as "local" or "global" and extract the relevant city for local articles.
 - **City-based Filtering**: Users can filter news by their city or search for articles related to specific cities.
 - **Pagination**: Supports pagination for viewing a large number of articles.
 - **Responsive UI**: Built with **Material UI** to provide a smooth user experience.
